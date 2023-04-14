@@ -1,0 +1,107 @@
+.wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullets {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 5px;
+}
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center !important;
+  line-height: 20px !important;
+  font-size: 12px;
+  color: #000 !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border-radius: 3px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.blur {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.content {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  top: 30%;
+  /* transform: translateY(50%); */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+.content h1 {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 85px;
+}
+.content p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content a {
+  background: #c19f80;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.content a > img {
+  margin-right: 5px;
+  width: 15px;
+}
+/* .slide1 > img {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+} */
+/* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/heroSlider/img-1.jpg); */

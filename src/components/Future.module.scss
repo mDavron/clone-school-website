@@ -1,0 +1,63 @@
+.wrapper {
+  background-image: url("../assets/images/future/future-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    text-align: center;
+    h1 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 70px;
+      // line-height: 85px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .submenu {
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: -30px;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 25px;
+      span {
+        color: rgba(193, 159, 128, 1);
+      }
+    }
+    a {
+      background: rgba(193, 159, 128, 1);
+      padding: 10px 25px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      width: 160px;
+      margin: 0 auto;
+      margin-top: 90px;
+      border-radius: 5px;
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 18px;
+      color: #ffffff;
+      img {
+        width: 15px;
+        height: 16px;
+        margin-right: 3px;
+      }
+    }
+  }
+}

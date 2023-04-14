@@ -1,0 +1,48 @@
+.wrapper {
+  background-image: url(../assets/images/branches/background-2.png);
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  padding: 130px 0;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img {
+    width: 650px;
+    height: 650px;
+  }
+  .content {
+    h2 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      color: #000000;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 28px;
+    }
+    li {
+      text-align: center;
+      color: rgba(193, 159, 128, 1);
+      font-size: 20px;
+      margin-bottom: 17px;
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+
+        color: #000000;
+      }
+    }
+  }
+}
