@@ -4,6 +4,8 @@ import styles from "./Home.module.scss";
 import Header from "../components/Header";
 import Branches from "../components/Branches";
 import Future from "../components/Future";
+import Slide from "../components/Slide";
+import Launching from "../components/Launching";
 
 const Home = () => {
   return (
@@ -12,6 +14,7 @@ const Home = () => {
       <HeroSlider />
       <Branches />
       <Future />
+      <Launching />
     </div>
   );
 };

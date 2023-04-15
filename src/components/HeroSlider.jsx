@@ -25,7 +25,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="wrap">
+    <div className="heroSlider">
       <div className="content">
         <h1>
           Admission is <br /> open
