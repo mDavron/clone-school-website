@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./Future.module.scss";
 import btnIcon from "../../assets/svg/button-icon.svg";
+import bg from "../../assets/images/future/future-bg.jpg";
 
 const Future = () => {
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={styles.wrapper}
+      style={{
+        backgroundImage: `url(${bg})`,
+      }}
+    >
       <div className={styles.content}>
         <h1>
           Your Future Begins Here <br />

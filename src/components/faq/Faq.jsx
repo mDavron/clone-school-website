@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Faq.module.scss";
+import bg from "../../assets/images/faq/bg.svg";
 
 const Faq = () => {
   return (
-    <div className={styles.faq}>
+    <div className={styles.faq} style={{ backgroundImage: `url(${bg})` }}>
       <div className="container">
         <h1>5 Reasons Why You Should Choose CIC School</h1>
         <div className={styles.flex}>
