@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Future.module.scss";
-import btnIcon from "../assets/svg/button-icon.svg";
+import btnIcon from "../../assets/svg/button-icon.svg";
 
 const Future = () => {
   return (

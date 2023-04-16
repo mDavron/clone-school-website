@@ -1,12 +1,12 @@
 import React from "react";
-import img from "../assets/images/slide/img-1.jpg";
-import img1 from "../assets/images/slide/pexels-1.jpeg";
-import img2 from "../assets/images/slide/pexels-2.jpeg";
-import img3 from "../assets/images/slide/pexels-3.jpeg";
-import img4 from "../assets/images/slide/pexels-4.jpeg";
-import img5 from "../assets/images/slide/pexels-5.jpg";
-import img6 from "../assets/images/slide/pexels-6.jpg";
-import img7 from "../assets/images/slide/pexels-7.jpg";
+import img from "../../assets/images/slide/img-1.jpg";
+import img1 from "../../assets/images/slide/pexels-1.jpeg";
+import img2 from "../../assets/images/slide/pexels-2.jpeg";
+import img3 from "../../assets/images/slide/pexels-3.jpeg";
+import img4 from "../../assets/images/slide/pexels-4.jpeg";
+import img5 from "../../assets/images/slide/pexels-5.jpg";
+import img6 from "../../assets/images/slide/pexels-6.jpg";
+import img7 from "../../assets/images/slide/pexels-7.jpg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

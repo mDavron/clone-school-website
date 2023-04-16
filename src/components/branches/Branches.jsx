@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Branches.module.scss";
-import man from "../assets/images/branches/hero.jpg";
+import man from "../../assets/images/branches/hero.jpg";
 const Branches = () => {
   return (
     <div className={styles.wrapper}>

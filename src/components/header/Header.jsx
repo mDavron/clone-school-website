@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
-import logo from "../assets/svg/logo.svg";
-import call from "../assets/svg/call.svg";
-import menuIcon from "../assets/svg/menu-icon.svg";
+import logo from "../../assets/svg/logo.svg";
+import call from "../../assets/svg/call.svg";
+import menuIcon from "../../assets/svg/menu-icon.svg";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [lang, setLang] = useState("uz");
+  const [lang, setLang] = useState("en");
 
   const toggLeMenu = () => {
     setLang(lang == "uz" ? "en" : "uz");

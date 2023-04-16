@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Launching.module.scss";
-import Slide from "./Slide";
+import Slide from "../slide/Slide";
 
 const Launching = () => {
   return (

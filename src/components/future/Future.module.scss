@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: url("../assets/images/future/future-bg.jpg");
+  background-image: url("../../assets/images/future/future-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -45,7 +45,8 @@
       color: #fff;
       display: flex;
       align-items: center;
-      width: 160px;
+      // width: 160px;
+      width: max-content;
       margin: 0 auto;
       margin-top: 90px;
       border-radius: 5px;

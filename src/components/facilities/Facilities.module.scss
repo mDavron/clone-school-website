@@ -1,0 +1,31 @@
+.facilities {
+  padding: 100px 0;
+  background-color: #000;
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 130px;
+  }
+  .content {
+    text-align: left;
+    h2 {
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      color: #c19f80;
+      margin-bottom: 38px;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      color: #c19f80;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../assets/images/heroSlider/img-1.jpg";
-import img2 from "../assets/images/heroSlider/img-2.jpg";
-import img3 from "../assets/images/heroSlider/img-3.jpeg";
-import btnIcon from "../assets/svg/button-icon.svg";
+import img1 from "../../assets/images/heroSlider/img-1.jpg";
+import img2 from "../../assets/images/heroSlider/img-2.jpg";
+import img3 from "../../assets/images/heroSlider/img-3.jpeg";
+import btnIcon from "../../assets/svg/button-icon.svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -51,7 +51,6 @@ export default function HeroSlider() {
       >
         <SwiperSlide>
           <img src={img1} />
-          {/* <div className="blur"></div> */}
         </SwiperSlide>
         <SwiperSlide>
           <img src={img2} />

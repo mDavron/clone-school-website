@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: url(../assets/images/branches/background-2.png);
+  background-image: url(../../assets/images/branches/background-2.png);
   background-size: cover;
   background-position: center;
   height: 900px;
@@ -12,6 +12,7 @@
   .img {
     width: 650px;
     height: 650px;
+    border-radius: 10px;
   }
   .content {
     h2 {

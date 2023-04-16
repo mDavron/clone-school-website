@@ -52,6 +52,7 @@
 
 .blur {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -59,6 +60,7 @@
   right: 0;
   z-index: 2;
 }
+
 .content {
   font-family: "Inter", sans-serif;
   position: absolute;
@@ -84,14 +86,15 @@
 .content a {
   background: #c19f80;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 10px 20px;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
   text-decoration: none;
 
   display: flex;
-  width: 180px;
+  /* width: 180px; */
+  width: max-content;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
