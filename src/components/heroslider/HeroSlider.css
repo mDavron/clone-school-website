@@ -83,28 +83,3 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.content a {
-  background: #c19f80;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 18px;
-  line-height: 22px;
-  color: #fff;
-  text-decoration: none;
-
-  display: flex;
-  /* width: 180px; */
-  width: max-content;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-.content a > img {
-  margin-right: 5px;
-  width: 15px;
-}
-/* .slide1 > img {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-} */
-/* background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/images/heroSlider/img-1.jpg); */

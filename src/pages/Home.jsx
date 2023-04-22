@@ -8,6 +8,7 @@ import Launching from "../components/launching/Launching";
 import Facilities from "../components/facilities/Facilities";
 import School from "../components/school/School";
 import Faq from "../components/faq/Faq";
+import Portfolio from "../components/portfolio/Portfolio";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Facilities />
       <School />
       <Faq />
+      <Portfolio />
     </div>
   );
 };

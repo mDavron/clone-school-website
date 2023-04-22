@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Future.module.scss";
-import btnIcon from "../../assets/svg/button-icon.svg";
 import bg from "../../assets/images/future/future-bg.jpg";
+import Button from "../button/Button";
 
 const Future = () => {
   return (
@@ -22,10 +22,7 @@ const Future = () => {
           Admission is Open Now <br /> Admission is open for
           <span> grades 1-11 now.</span>
         </p>
-        <a href="#">
-          <img src={btnIcon} alt="" />
-          Apply now
-        </a>
+        <Button />
       </div>
     </div>
   );

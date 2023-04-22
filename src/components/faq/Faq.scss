@@ -1,0 +1,74 @@
+.accordion {
+  font-family: "Inter", sans-serif;
+  height: 750px;
+  background: rgba(39, 35, 41, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  .flex {
+    display: flex;
+    // align-items: center;
+    gap: 150px;
+  }
+  .left {
+    flex: 1;
+    .item {
+      padding: 10px 5px;
+    }
+    .title {
+      font-size: 24px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid rgba(255, 255, 255, 1);
+      text-transform: capitalize;
+    }
+    .title.active {
+      border-bottom: 0;
+    }
+    span {
+      font-size: 27px;
+      cursor: pointer;
+      padding: 5px;
+    }
+    .text {
+      margin-top: 10px;
+      line-height: 24px;
+      font-size: 19px;
+      color: #fff;
+      padding-right: 30px;
+    }
+  }
+  .right {
+    flex: 1;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .contents {
+      margin-bottom: 80px;
+    }
+
+    h4 {
+      font-size: 27px;
+      color: #fff;
+      text-align: center;
+    }
+    span {
+      color: rgba(193, 159, 128, 1);
+      font-size: 20px;
+    }
+  }
+}

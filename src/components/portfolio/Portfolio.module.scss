@@ -1,0 +1,124 @@
+$bgCup: rgba(254, 161, 22, 0.3);
+$bgList: rgba(28, 181, 163, 0.17);
+$bgBook: rgba(242, 85, 137, 0.17);
+$textRed: rgba(242, 85, 137, 1);
+$titleColor: rgba(51, 51, 51, 1);
+$textColor: rgba(0, 0, 0, 1);
+// font size styles
+$headingSize: 50px;
+$supHeadingSize: 24px;
+$textSize: 16px;
+// font weight styles
+$bold: 700;
+$normal: 400;
+// PORTFOLIO TOP
+
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  font-family: "Inter", sans-serif;
+  .desc {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+      color: $titleColor;
+      margin-bottom: 30px;
+    }
+    p {
+      line-height: 25px;
+      font-size: $textSize;
+      color: $textColor;
+    }
+  }
+
+  // PORTFOLIO BOTTOM
+  .portfolio_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      flex: 50%;
+
+      .item {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+      .bg > img {
+        width: 50px;
+        height: 50px;
+      }
+      .bg {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+      .content_title {
+        margin-bottom: 10px;
+      }
+      .item:nth-child(1) {
+        .bg {
+          background: $bgCup;
+        }
+
+        h1 {
+          color: rgba(254, 161, 22, 1);
+          margin-bottom: 10px;
+        }
+      }
+
+      .item:nth-child(2) {
+        .bg {
+          background: $bgList;
+        }
+        h1 {
+          color: rgba(28, 181, 163, 1);
+        }
+      }
+      .item:nth-child(3) {
+        .bg {
+          background: $bgBook;
+        }
+        h1 {
+          color: rgba(242, 85, 137, 1);
+        }
+      }
+    }
+
+    .content {
+      // background-color: aquamarine;
+      max-width: 420px;
+      h1 {
+        font-size: $supHeadingSize;
+        font-weight: $bold;
+        color: $titleColor;
+      }
+      p {
+        font-size: $textSize;
+        font-weight: $normal;
+        color: $textColor;
+        line-height: 20px;
+      }
+    }
+
+    .right {
+      flex: 50%;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 450px;
+      }
+    }
+  }
+}

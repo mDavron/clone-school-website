@@ -1,8 +1,9 @@
 import React from "react";
+import Button from "../button/Button";
 import img1 from "../../assets/images/heroSlider/img-1.jpg";
 import img2 from "../../assets/images/heroSlider/img-2.jpg";
 import img3 from "../../assets/images/heroSlider/img-3.jpeg";
-import btnIcon from "../../assets/svg/button-icon.svg";
+
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -33,10 +34,7 @@ export default function HeroSlider() {
         <p>
           Admission for grades 1 to 11 <br /> is open at CIC school
         </p>
-        <a href="#">
-          <img src={btnIcon} alt="" />
-          Apply now
-        </a>
+        <Button/>
       </div>
       <Swiper
         autoplay={{
