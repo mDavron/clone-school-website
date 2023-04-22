@@ -1,14 +1,15 @@
 import React from "react";
 import "./Button.scss";
 import icon from "../../assets/svg/button-icon.svg";
+import { Link } from "react-router-dom";
 
 const Button = () => {
   return (
     <div className="btn">
-      <a href="#">
+      <Link to={"/apply-now"}>
         <img src={icon} alt="" />
         Apply now
-      </a>
+      </Link>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Faq = () => {
   const [select, setSelect] = useState(null);
 
   const toggle = (i) => {
-    if (select === i) {
+    if (select == i) {
       setSelect(null);
     } else {
       setSelect(i);
@@ -27,7 +27,7 @@ const Faq = () => {
             {data.map((item, i) => {
               const { title, text } = item;
               return (
-                <div className="item">
+                <div key={i} className="item">
                   <p className={`title ${select == i ? "active" : ""} `}>
                     {title}
                     <span className="toggle" onClick={() => toggle(i)}>

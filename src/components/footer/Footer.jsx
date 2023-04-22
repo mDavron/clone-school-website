@@ -31,7 +31,7 @@ const Footer = () => {
               <ul>
                 {footerData.items1.map((item, i) => {
                   return (
-                    <li className={styles.list_item}>
+                    <li className={styles.list_item} key={i}>
                       <a href="#">{item.text}</a>
                     </li>
                   );
@@ -43,7 +43,7 @@ const Footer = () => {
               <ul>
                 {footerData.items2.map((item, i) => {
                   return (
-                    <li className={styles.list_item}>
+                    <li className={styles.list_item} key={i}>
                       <a href="#">{item.text}</a>
                     </li>
                   );
@@ -55,7 +55,7 @@ const Footer = () => {
             <h2 className={styles.footer_right_title}>Follow Us</h2>
             <div className={styles.social_icons}>
               {footerData.items3.map((icons, i) => (
-                <span>
+                <span key={i}>
                   <img src={icons.icon} alt="alt" />
                 </span>
               ))}
@@ -73,7 +73,7 @@ const Footer = () => {
                 placeholder="Mail addres"
               />
               <p>
-                <label for="w3review">Type Something</label>
+                <label htmlFor="w3review">Type Something</label>
               </p>
               <textarea
                 className={styles.form_textarea}

@@ -5,7 +5,6 @@ import img2 from "../../assets/images/slide/pexels-2.jpeg";
 import img3 from "../../assets/images/slide/pexels-3.jpeg";
 import img4 from "../../assets/images/slide/pexels-4.jpeg";
 import img5 from "../../assets/images/slide/pexels-5.jpg";
-import img6 from "../../assets/images/slide/pexels-6.jpg";
 import img7 from "../../assets/images/slide/pexels-7.jpg";
 
 // Import Swiper React components

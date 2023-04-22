@@ -3,8 +3,11 @@ import styles from "./Header.module.scss";
 import logo from "../../assets/svg/logo.svg";
 import call from "../../assets/svg/call.svg";
 import menuIcon from "../../assets/svg/menu-icon.svg";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  console.log(location.pathname);
   const [open, setOpen] = useState(false);
   const [lang, setLang] = useState("en");
 
@@ -13,7 +16,11 @@ const Header = () => {
     setOpen(!open);
   };
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        location.pathname !== "/" ? styles.bgBlack : " "
+      }`}
+    >
       <div className={styles.container}>
         <div className={styles.logo}>
           <img src={logo} alt="" />
@@ -21,16 +28,16 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <a href="#">About us</a>
+              <Link to={"/about"}>About us</Link>
             </li>
             <li>
-              <a href="#">Contact us</a>
+              <Link to={"/contact-us"}>Contact us</Link>
             </li>
             <li>
-              <a href="#">Apply now</a>
+              <Link to={"/apply-now"}>Apply now</Link>
             </li>
           </ul>
         </nav>
