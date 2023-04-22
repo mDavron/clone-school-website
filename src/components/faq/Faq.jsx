@@ -30,7 +30,7 @@ const Faq = () => {
                 <div className="item">
                   <p className={`title ${select == i ? "active" : ""} `}>
                     {title}
-                    <span onClick={() => toggle(i)}>
+                    <span className="toggle" onClick={() => toggle(i)}>
                       {select === i ? "-" : "+"}
                     </span>
                   </p>

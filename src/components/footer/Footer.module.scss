@@ -1,0 +1,116 @@
+.footer {
+  padding: 50px 0;
+  background-color: black;
+  color: #fff;
+}
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 100px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer_left {
+  flex: 1;
+  .connections {
+    padding-left: 20px;
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .list {
+    margin: 12px 0;
+    a {
+      color: #fff;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  .footer_logo {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+}
+.footer_center {
+  margin-top: 15px;
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  // background-color: #b76969;
+  .footer_centerLeft,
+  .footer_centerRight {
+    .list_title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .list_item {
+      margin: 15px 0;
+      a {
+        color: #fff;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+.footer_right {
+  flex: 1;
+  margin-top: 15px;
+  .footer_right_title {
+    margin-bottom: 20px;
+  }
+  .social_icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+    img {
+      cursor: pointer;
+    }
+  }
+  .social_icons span:nth-child(2) {
+    padding: 10px;
+    background-color: #c19f80;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social_icons span:nth-child(2) > img {
+    padding-right: 1px;
+  }
+  .footer_form {
+    .form_title {
+      font-size: 24px;
+      color: #fff;
+      margin: 20px 0;
+    }
+    .form_input {
+      width: 90%;
+      background: transparent;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 20px;
+      padding: 8px 3px;
+    }
+    .form_textarea {
+      font-size: 18px;
+      color: #fff;
+      width: 90%;
+      background: transparent;
+      color: #fff;
+      border-radius: 3px;
+      margin-top: 7px;
+    }
+  }
+}

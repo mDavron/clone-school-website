@@ -38,17 +38,19 @@
     .title.active {
       border-bottom: 0;
     }
-    span {
-      font-size: 27px;
-      cursor: pointer;
-      padding: 5px;
-    }
+
     .text {
       margin-top: 10px;
       line-height: 24px;
       font-size: 19px;
       color: #fff;
       padding-right: 30px;
+    }
+    .toggle {
+      font-size: 27px;
+      cursor: pointer;
+      padding: 5px;
+      color: #fff;
     }
   }
   .right {

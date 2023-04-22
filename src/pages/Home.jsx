@@ -9,6 +9,7 @@ import Facilities from "../components/facilities/Facilities";
 import School from "../components/school/School";
 import Faq from "../components/faq/Faq";
 import Portfolio from "../components/portfolio/Portfolio";
+import Partners from "../components/partners/Partners";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <School />
       <Faq />
       <Portfolio />
+      {/* <Partners /> */}
     </div>
   );
 };

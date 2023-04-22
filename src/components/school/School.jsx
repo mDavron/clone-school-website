@@ -11,9 +11,10 @@ const School = () => {
           <div className={styles.content}>
             <h2>Achieving Excellence Together</h2>
             <p>
-              Millat Umidi International School will give you the opportunity to
-              be ready to study at top international universities such as MIT,
-              Harvard, Yale and others on full ride scholarship.
+              <span>Millat Umidi International School</span> will give you the
+              opportunity to be ready to study at top international universities
+              such as <span> MIT, Harvard, Yale </span> and others on full ride
+              scholarship.
             </p>
           </div>
         </div>

@@ -4,7 +4,6 @@ import img1 from "../../assets/images/heroSlider/img-1.jpg";
 import img2 from "../../assets/images/heroSlider/img-2.jpg";
 import img3 from "../../assets/images/heroSlider/img-3.jpeg";
 
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -34,11 +33,11 @@ export default function HeroSlider() {
         <p>
           Admission for grades 1 to 11 <br /> is open at CIC school
         </p>
-        <Button/>
+        <Button />
       </div>
       <Swiper
         autoplay={{
-          delay: 2500,
+          delay: 5500,
           disableOnInteraction: false,
         }}
         direction={"vertical"}
