@@ -1,7 +1,7 @@
 .heroSlider {
   max-width: 1920px;
   width: 100%;
-  height: 800px;
+  height: 756px;
   position: relative;
   margin: 0 auto;
 }
@@ -9,6 +9,8 @@
 .heroSlider .swiper {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  background-position: center;
 }
 
 .heroSlider .swiper-slide {
@@ -37,6 +39,7 @@
   border-radius: 5px;
 }
 .heroSlider .swiper-pagination-bullet {
+  border: none !important;
   width: 20px !important;
   height: 20px !important;
   text-align: center !important;

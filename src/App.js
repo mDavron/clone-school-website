@@ -2,9 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from "./components/layout/Layout";
-import AboutUs from "./pages/aboutUs/AboutUs";
+import About from "./pages/about/About";
 import ContactUs from "./pages/contactUs/ContactUs";
-import ApplyNow from "./pages/applyNow/ApplyNow";
+import Form from "./pages/form/Form";
 
 import Notfound from "./pages/Notfound";
 function App() {
@@ -13,9 +13,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/apply-now" element={<ApplyNow />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<ContactUs />} />
+          <Route path="/form" element={<Form />} />
         </Route>
         <Route path="*" element={<Notfound />} />
       </Routes>

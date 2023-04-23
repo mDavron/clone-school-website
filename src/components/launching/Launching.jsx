@@ -1,18 +1,19 @@
 import React from "react";
 import styles from "./Launching.module.scss";
 import Slide from "../slide/Slide";
+import { slideData2 } from "../../assets/data";
 
 const Launching = () => {
   return (
     <div className={styles.launching}>
       <div className="container">
         <div className={styles.flex}>
-          <Slide />
+          <Slide data={slideData2} />
           <div className={styles.content}>
             <h2>The Launching of CIC School</h2>
             <p>
               <span> CIC International School </span> celebrated its launch at
-              INHA University in Tashkent with it’s founder{" "}
+              INHA University in Tashkent with it’s founder
               <span className={styles.hero}>Umidjon Ishmukhamedov</span>, as its
               host. The founder of the educational institution made Millat Umidi
               International School’s intentions very clear in order to provide

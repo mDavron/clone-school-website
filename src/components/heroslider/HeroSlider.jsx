@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../button/Button";
 import img1 from "../../assets/images/heroSlider/img-1.jpg";
-import img2 from "../../assets/images/heroSlider/img-2.jpg";
+import img2 from "../../pages/about/images/about2.jpg";
 import img3 from "../../assets/images/heroSlider/img-3.jpeg";
 
 // Import Swiper React components
@@ -47,14 +47,14 @@ export default function HeroSlider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={img1} />
+          <img src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img2} />
+          <img src={img2} alt="" />
           <div className="blur"></div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img3} />
+          <img src={img3} alt="" />
           <div className="blur"></div>
         </SwiperSlide>
       </Swiper>

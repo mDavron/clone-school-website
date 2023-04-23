@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./Facilities.module.scss";
 import Slide from "../slide/Slide";
+import { slideData3 } from "../../assets/data";
 
 const Facilities = () => {
   return (
     <div className={styles.facilities}>
       <div className="container">
         <div className={styles.flex}>
-          <Slide />
+          <Slide data={slideData3} />
           <div className={styles.content}>
             <h2>Our Facilities</h2>
             <p>

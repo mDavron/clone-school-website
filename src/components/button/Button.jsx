@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Button = () => {
   return (
     <div className="btn">
-      <Link to={"/apply-now"}>
+      <Link to={"/form"}>
         <img src={icon} alt="" />
         Apply now
       </Link>

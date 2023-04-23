@@ -13,11 +13,11 @@ const Portfolio = () => {
           <h1 className={styles.title}>Excellent Student Portfolio</h1>
           <p className={styles.text}>
             Student Portfolio is an integral part of each student's application
-            advancing from high school to a university. Cambridge International
-            College provides all necessary tools for students to build their
-            portfolios that stand out. Students in CIC will have the chance to
-            enter Top Universities worldwide and have the opportunity to study
-            based on scholarships.
+            advancing from high school to a university.
+            <strong> Cambridge International College </strong> provides all
+            necessary tools for students to build their portfolios that stand
+            out. Students in CIC will have the chance to enter Top Universities
+            worldwide and have the opportunity to study based on scholarships.
           </p>
         </section>
         <section className={styles.portfolio_bottom}>
@@ -27,7 +27,7 @@ const Portfolio = () => {
               return (
                 <div className={styles.item} key={index}>
                   <div className={styles.bg}>
-                    <img src={icon} />
+                    <img src={icon} alt="" />
                   </div>
 
                   <div>

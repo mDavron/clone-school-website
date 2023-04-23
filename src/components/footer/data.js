@@ -23,9 +23,9 @@ export const footerData = {
   ],
   items2: [
     { text: "Home", url: "/" },
-    { text: "About us", url: "/about-us" },
-    { text: "Contact us", url: "/contact-us" },
-    { text: "Apply now", url: "/apply-now" },
+    { text: "About us", url: "/about" },
+    { text: "Contact us", url: "/contacts" },
+    { text: "Apply now", url: "/form" },
   ],
   items3: [{ icon: youtube }, { icon: telegram }, { icon: instagram }],
 };

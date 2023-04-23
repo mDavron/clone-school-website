@@ -19,7 +19,7 @@ const Footer = () => {
                   return (
                     <li className={`${styles.list} ${styles.flex}`} key={i}>
                       <img src={icon} alt="" />
-                      <a>{text}</a>
+                      <a href="#">{text}</a>
                     </li>
                   );
                 })}
