@@ -30,12 +30,17 @@
     }
     a {
       text-decoration: none;
-      color: inherit;
       font-weight: 500;
       font-size: 20px;
       line-height: 24px;
-
-      color: #ffffff;
+      // color: #fff;
+      padding-bottom: 5px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: #c19f80;
+        // border-bottom: 2px solid #c19f80;
+        letter-spacing: 0.1px;
+      }
     }
   }
   .logo svg {

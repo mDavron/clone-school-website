@@ -25,7 +25,7 @@ const Portfolio = () => {
             {data.map((item, index) => {
               const { icon, title, text } = item;
               return (
-                <div className={styles.item}>
+                <div className={styles.item} key={index}>
                   <div className={styles.bg}>
                     <img src={icon} />
                   </div>

@@ -6,6 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
   .content {
     text-align: center;
     h1 {

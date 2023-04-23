@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./Header.module.scss";
 import logo from "../../assets/svg/logo.svg";
 import call from "../../assets/svg/call.svg";
 import menuIcon from "../../assets/svg/menu-icon.svg";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import styles from "./Header.module.scss";
 
 const Header = () => {
   const location = useLocation();
@@ -28,16 +28,16 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to={"/"}>Home</Link>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <Link to={"/about"}>About us</Link>
+              <NavLink to={"/about"}>About us</NavLink>
             </li>
             <li>
-              <Link to={"/contact-us"}>Contact us</Link>
+              <NavLink to={"/contact-us"}>Contact us</NavLink>
             </li>
             <li>
-              <Link to={"/apply-now"}>Apply now</Link>
+              <NavLink to={"/apply-now"}>Apply now</NavLink>
             </li>
           </ul>
         </nav>

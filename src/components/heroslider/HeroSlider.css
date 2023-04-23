@@ -1,7 +1,9 @@
 .heroSlider {
+  max-width: 1920px;
   width: 100%;
-  height: 100vh;
+  height: 800px;
   position: relative;
+  margin: 0 auto;
 }
 
 .heroSlider .swiper {

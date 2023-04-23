@@ -11,9 +11,11 @@ body {
 
 a {
   text-decoration: none;
+  color: aliceblue;
 }
 .container {
-  max-width: 1260px;
+  /* max-width: 1260px; */
+  max-width: 82%;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -21,4 +23,8 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+a.active {
+  color: #c19f80;
+  border-bottom: 2px solid #c19f80;
 }

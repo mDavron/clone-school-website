@@ -22,10 +22,10 @@ export const footerData = {
     { text: "Partners" },
   ],
   items2: [
-    { text: "Home" },
-    { text: "About us" },
-    { text: "Contact us" },
-    { text: "Apply now" },
+    { text: "Home", url: "/" },
+    { text: "About us", url: "/about-us" },
+    { text: "Contact us", url: "/contact-us" },
+    { text: "Apply now", url: "/apply-now" },
   ],
   items3: [{ icon: youtube }, { icon: telegram }, { icon: instagram }],
 };

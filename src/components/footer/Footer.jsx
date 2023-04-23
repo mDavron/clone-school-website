@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Footer.module.scss";
 import logo from "../../assets/svg/logo.svg";
 import { footerData } from "./data";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -44,7 +45,7 @@ const Footer = () => {
                 {footerData.items2.map((item, i) => {
                   return (
                     <li className={styles.list_item} key={i}>
-                      <a href="#">{item.text}</a>
+                      <Link to={item.url}>{item.text}</Link>
                     </li>
                   );
                 })}
