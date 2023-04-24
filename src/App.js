@@ -7,6 +7,7 @@ import ContactUs from "./pages/contactUs/ContactUs";
 import Form from "./pages/form/Form";
 
 import Notfound from "./pages/Notfound";
+import MapComponent from "./components/map/MapComponent";
 function App() {
   return (
     <div className="app">
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<ContactUs />} />
           <Route path="/form" element={<Form />} />
+          <Route path="/map" element={<MapComponent />} />
         </Route>
         <Route path="*" element={<Notfound />} />
       </Routes>

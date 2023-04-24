@@ -4,6 +4,7 @@ import Slide from "../../components/slide/Slide";
 import Button from "../../components/button/Button";
 import { aboutSlideData } from "../../assets/data";
 import bgAbout from "./images/about2.jpg";
+import Education from "../../components/education/Education";
 const About = () => {
   return (
     <div className={styles.about}>
@@ -52,6 +53,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Education />
     </div>
   );
 };

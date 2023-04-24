@@ -68,3 +68,31 @@
     height: 35px;
   }
 }
+.mapWrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  // background-color: aqua;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.card {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  background-color: #fff;
+  h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+  }
+}

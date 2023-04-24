@@ -4,6 +4,7 @@ import hero from "./images/hero1.jpg";
 import call from "./images/call.svg";
 import marker from "./images/map3.svg";
 import message from "./images/message.svg";
+import MyMapComponent from "../../components/map/MapComponent";
 
 const details = [
   { icon: call, title: "Call", text: "+998 71 200 0308" },
@@ -41,6 +42,33 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <section className={styles.mapWrapper}>
+        <div className="container">
+          <div className={styles.mapContainer}>
+            <div className={styles.card}>
+              <h3>A. Navoi Branch</h3>
+              <MyMapComponent
+                center={[41.323462, 69.248894]}
+                geometry={[41.323462, 69.248894]}
+              />
+            </div>
+            <div className={styles.card}>
+              <h3>Ibn Sino Branch</h3>
+              <MyMapComponent
+                center={[41.342676, 69.167617]}
+                geometry={[41.342676, 69.167617]}
+              />
+            </div>
+            <div className={styles.card}>
+              <h3>Samarkand Branch</h3>
+              <MyMapComponent
+                center={[39.660315, 66.93228]}
+                geometry={[39.660315, 66.93228]}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

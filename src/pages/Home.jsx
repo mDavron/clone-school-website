@@ -14,7 +14,6 @@ import Portfolio from "../components/portfolio/Portfolio";
 const Home = () => {
   return (
     <div className={styles.home}>
-      {/* <Header /> */}
       <HeroSlider />
       <Branches />
       <Future />
