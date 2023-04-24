@@ -19,7 +19,7 @@ const MapComponent = ({ center, geometry }) => {
           className={styles.map}
           defaultState={{
             center: center,
-            zoom: 15,
+            zoom: 16,
             controls: [],
           }}
         >

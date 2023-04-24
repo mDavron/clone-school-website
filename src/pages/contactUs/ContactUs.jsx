@@ -43,28 +43,36 @@ const ContactUs = () => {
         </div>
       </div>
       <section className={styles.mapWrapper}>
-        <div className="container">
-          <div className={styles.mapContainer}>
-            <div className={styles.card}>
+        <div className={styles.mapContainer}>
+          <div className={styles.mapInner}>
+            <div className={styles.cardWrap}>
               <h3>A. Navoi Branch</h3>
-              <MyMapComponent
-                center={[41.323462, 69.248894]}
-                geometry={[41.323462, 69.248894]}
-              />
+              <div className={styles.card}>
+                <MyMapComponent
+                  center={[41.323462, 69.248894]}
+                  geometry={[41.323462, 69.248894]}
+                />
+              </div>
             </div>
-            <div className={styles.card}>
+
+            <div className={styles.cardWrap}>
               <h3>Ibn Sino Branch</h3>
-              <MyMapComponent
-                center={[41.342676, 69.167617]}
-                geometry={[41.342676, 69.167617]}
-              />
+              <div className={styles.card}>
+                <MyMapComponent
+                  center={[41.342676, 69.167617]}
+                  geometry={[41.342676, 69.167617]}
+                />
+              </div>
             </div>
-            <div className={styles.card}>
+
+            <div className={styles.cardWrap}>
               <h3>Samarkand Branch</h3>
-              <MyMapComponent
-                center={[39.660315, 66.93228]}
-                geometry={[39.660315, 66.93228]}
-              />
+              <div className={styles.card}>
+                <MyMapComponent
+                  center={[39.660315, 66.93228]}
+                  geometry={[39.660315, 66.93228]}
+                />
+              </div>
             </div>
           </div>
         </div>

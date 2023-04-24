@@ -4,7 +4,10 @@ import Slide from "../../components/slide/Slide";
 import Button from "../../components/button/Button";
 import { aboutSlideData } from "../../assets/data";
 import bgAbout from "./images/about2.jpg";
-import Education from "../../components/education/Education";
+
+import { cardData } from "./card/data";
+import Card from "./card/Card";
+
 const About = () => {
   return (
     <div className={styles.about}>
@@ -53,7 +56,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Education />
+      <section className={styles.cards_wrapper}>
+        <div className="container">
+          <div className={styles.cards_inner}>
+            {cardData.map((card, index) => {
+              return <Card key={index} {...card} />;
+            })}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
