@@ -19,7 +19,7 @@ const Footer = () => {
                   return (
                     <li className={`${styles.list} ${styles.flex}`} key={i}>
                       <img src={icon} alt="" />
-                      <a href="#">{text}</a>
+                      <Link to={"/"}>{text}</Link>
                     </li>
                   );
                 })}
@@ -33,7 +33,7 @@ const Footer = () => {
                 {footerData.items1.map((item, i) => {
                   return (
                     <li className={styles.list_item} key={i}>
-                      <a href="#">{item.text}</a>
+                      <Link to={"/"}>{item.text}</Link>
                     </li>
                   );
                 })}

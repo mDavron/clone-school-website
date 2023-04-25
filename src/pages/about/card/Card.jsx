@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./Card.module.scss";
 
-const STYLES = ["bgCoral"];
-
 const Card = ({ icon, title, text, cardBg }) => {
   return (
     <div className={styles.card}>

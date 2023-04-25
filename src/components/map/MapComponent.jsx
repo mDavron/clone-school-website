@@ -1,4 +1,5 @@
-// import { YMaps, Map, Placemark, Rectangle } from "react-yandex-maps";
+import React from "react";
+
 import {
   YMaps,
   Map,
@@ -8,7 +9,6 @@ import {
   GeolocationControl,
 } from "@pbe/react-yandex-maps";
 
-import React from "react";
 import styles from "./MapComponent.module.scss";
 
 const MapComponent = ({ center, geometry }) => {
@@ -20,7 +20,7 @@ const MapComponent = ({ center, geometry }) => {
           defaultState={{
             center: center,
             zoom: 16,
-            controls: [],
+            // controls: [],
           }}
         >
           <Placemark geometry={geometry} />

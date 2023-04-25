@@ -7,7 +7,7 @@ const Faq = () => {
   const [select, setSelect] = useState(null);
 
   const toggle = (i) => {
-    if (select == i) {
+    if (select === i) {
       setSelect(null);
     } else {
       setSelect(i);
@@ -28,7 +28,7 @@ const Faq = () => {
               const { title, text } = item;
               return (
                 <div key={i} className="item">
-                  <p className={`title ${select == i ? "active" : ""} `}>
+                  <p className={`title ${select === i ? "active" : ""} `}>
                     {title}
                     <span className="toggle" onClick={() => toggle(i)}>
                       {select === i ? "-" : "+"}
@@ -43,7 +43,7 @@ const Faq = () => {
             <div className="contents">
               <h4>
                 Admission is Open Now Admission is open for
-                <span> grades 1-11 now.</span>
+                <span className="small"> grades 1-11 now.</span>
               </h4>
               <Button />
             </div>

@@ -6,7 +6,7 @@ import About from "./pages/about/About";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Form from "./pages/form/Form";
 
-import Notfound from "./pages/Notfound";
+import Notfound from "./pages/notFound/Notfound";
 import MapComponent from "./components/map/MapComponent";
 function App() {
   return (
