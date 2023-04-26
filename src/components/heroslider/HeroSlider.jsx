@@ -8,10 +8,10 @@ import img3 from "../../assets/images/heroSlider/img-3.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/scss";
+import "swiper/scss/pagination";
 
-import "./HeroSlider.css";
+import "./HeroSlider.scss";
 
 // import required modules
 import { Pagination, EffectFade, Autoplay } from "swiper";

@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import logo from "../../assets/svg/logo.svg";
 import call from "../../assets/svg/call.svg";
 import menuIcon from "../../assets/svg/menu-icon.svg";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 const Header = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   // console.log(location.pathname);
   const [open, setOpen] = useState(false);
@@ -15,6 +16,9 @@ const Header = () => {
     setLang(lang === "uz" ? "en" : "uz");
     setOpen(!open);
   };
+  React.useEffect(() => {
+    navigate("/");
+  }, [navigate]);
   return (
     <header
       className={`${styles.header} ${
@@ -33,7 +37,7 @@ const Header = () => {
                 <NavLink to={"/"}>Home</NavLink>
               </li>
               <li>
-                <NavLink to={"/about"}>About</NavLink>
+                <NavLink to={"/about"}>About us</NavLink>
               </li>
               <li>
                 <NavLink to={"/contacts"}>Contact us</NavLink>

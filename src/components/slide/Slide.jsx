@@ -4,11 +4,14 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
+import "swiper/scss";
+// import 'swiper/scss/navigation';
+import "swiper/scss/pagination";
 
 // import "./styles.css";
-import "./Slide.css";
+import "./Slide.scss";
 
 // import required modules
 import { Pagination, Autoplay, EffectFade } from "swiper";
