@@ -7,6 +7,9 @@ import ContactUs from "./pages/contactUs/ContactUs";
 import Form from "./pages/form/Form";
 import Notfound from "./pages/notFound/Notfound";
 function App() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="app">
       <Routes>
