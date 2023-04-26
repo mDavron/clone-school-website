@@ -29,9 +29,15 @@ $textColor: #000;
     color: #c19f80;
   }
 }
-
+// ======= ABOUT BOTTOM =======
 .about_bottom {
   background-color: #000;
+  .about_left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .about_title_top {
     font-size: 45px;
     font-weight: 500;

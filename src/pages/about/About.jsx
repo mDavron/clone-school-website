@@ -39,7 +39,7 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      {/* ABOUT BOTTOM */}
       <div className={styles.about_bottom}>
         <div className="container">
           <div className={styles.about_inner}>
