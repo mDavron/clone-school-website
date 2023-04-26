@@ -1,10 +1,10 @@
-import img from "./images/slide/img-1.jpg";
-import img1 from "./images/slide/pexels-1.jpeg";
-import img2 from "./images/slide/pexels-2.jpeg";
-import img3 from "./images/slide/pexels-3.jpeg";
-import img4 from "./images/slide/pexels-4.jpeg";
-import img5 from "./images/slide/pexels-5.jpeg";
-import img7 from "./images/slide/pexels-7.jpg";
+import img from "./images/slideImages/slide1.jpg";
+import img1 from "./images/slideImages/pexels-1.webp";
+import img2 from "./images/slideImages/pexels-2.webp";
+import img3 from "./images/slideImages/pexels-3.webp";
+import img4 from "./images/slideImages/slide2.jpg";
+import img7 from "./images/slideImages/slide3.jpg";
+import img5 from "./images/slideImages/slide4.jpg";
 import aboutImg1 from "../pages/about/images/about1.jpg";
 import aboutImg2 from "../pages/about/images/about2.jpg";
 

@@ -1,8 +1,8 @@
-import iconMessage from "./footerImages/message.svg";
-import mapIcon from "./footerImages/map.svg";
-import youtube from "./footerImages/youtube.png";
-import instagram from "./footerImages/instagram.png";
-import telegram from "./footerImages/telegram.png";
+import iconMessage from "../../assets/images/footerIcons/message.svg";
+import mapIcon from "../../assets/images/footerIcons/map.svg";
+import youtube from "../../assets/images/footerIcons/youtube.png";
+import instagram from "../../assets/images/footerIcons/instagram.png";
+import telegram from "../../assets/images/footerIcons/telegram.png";
 
 export const footerData = {
   items: [

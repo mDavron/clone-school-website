@@ -15,7 +15,6 @@ import "./Slide.scss";
 
 // import required modules
 import { Pagination, Autoplay, EffectFade } from "swiper";
-// const images = [img, img1, img2, img3, img4, img5, img3, img7];
 const Slide = ({ data }) => {
   return (
     <div className="sliderWrapper">

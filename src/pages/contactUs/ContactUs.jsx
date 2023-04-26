@@ -4,7 +4,6 @@ import hero from "./images/hero1.jpg";
 import call from "./images/call.svg";
 import marker from "./images/map3.svg";
 import message from "./images/message.svg";
-// import MyMapComponent from "../../components/map/MapComponent";
 
 const details = [
   { icon: call, title: "Call", text: "+998 71 200 0308" },

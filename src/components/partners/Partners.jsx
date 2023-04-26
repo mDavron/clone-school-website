@@ -1,7 +1,7 @@
 import React from "react";
-import akfa from "./Images/akfa.svg";
-import pearson from "./Images/pearson.svg";
-import tpu from "./Images/tpu.svg";
+import akfa from "../../assets/images/partnersIcon/akfa.svg";
+import pearson from "../../assets/images/partnersIcon/pearson.svg";
+import tpu from "../../assets/images/partnersIcon/tpu.svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "./Footer.module.scss";
-import logo from "../../assets/svg/logo.svg";
-import { footerData } from "./data";
 import { Link } from "react-router-dom";
+
+import styles from "./Footer.module.scss";
+import logo from "../../assets/images/footerIcons/logo.svg";
+import { footerData } from "./data";
 
 const Footer = () => {
   return (
@@ -66,11 +67,13 @@ const Footer = () => {
               <input
                 className={styles.form_input}
                 type="text"
+                name="fullname"
                 placeholder="Name"
               />
               <input
                 className={styles.form_input}
                 type="email"
+                name="email"
                 placeholder="Mail addres"
               />
               <p>
@@ -78,8 +81,8 @@ const Footer = () => {
               </p>
               <textarea
                 className={styles.form_textarea}
-                id="w3review"
-                name="w3review"
+                id="message"
+                name="message"
                 rows="2"
                 cols="40"
               ></textarea>
