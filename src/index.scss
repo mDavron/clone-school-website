@@ -15,10 +15,14 @@ a {
 }
 .container {
   max-width: 1260px;
-  /* max-width: 82%; */
   margin: 0 auto;
   padding: 0 30px;
 }
+// sm: 540px,
+// md: 720px,
+// lg: 960px,
+// xl: 1140px,
+// xxl: 1320px
 .app {
   min-height: 100vh;
   display: flex;

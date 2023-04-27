@@ -4,6 +4,10 @@
   color: #333;
   padding: 35px;
   background-color: #fff;
+  @media (max-width: 1140px) {
+    width: 300px;
+    padding: 45px;
+  }
   h3 {
     font-size: 20px;
     margin-bottom: 15px;

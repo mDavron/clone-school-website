@@ -20,8 +20,10 @@
   }
   .flex {
     display: flex;
-    // align-items: center;
     gap: 150px;
+    @media (max-width: 1320px) {
+      gap: 100px;
+    }
   }
   .left {
     flex: 1;

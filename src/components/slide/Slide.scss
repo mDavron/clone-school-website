@@ -2,6 +2,10 @@
   width: 580px;
   height: 580px;
   position: relative;
+  @media (max-width: 1140px) {
+    width: 500px;
+    height: 500px;
+  }
 
   .swiper {
     width: 100%;
