@@ -15,6 +15,9 @@ const details = [
   },
 ];
 const ContactUs = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.contacts}>
       <img src={hero} alt="" />

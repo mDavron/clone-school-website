@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./Form.module.scss";
 
 const Form = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.form_wrapper}>
       <h1>Apply Now</h1>

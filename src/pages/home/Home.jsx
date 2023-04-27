@@ -10,6 +10,9 @@ import Faq from "../../components/faq/Faq";
 import Portfolio from "../../components/portfolio/Portfolio";
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.home}>
       <HeroSlider />

@@ -9,6 +9,9 @@ import { cardData } from "./card/data";
 import Card from "./card/Card";
 
 const About = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.about}>
       <div className={styles.about_top}>
