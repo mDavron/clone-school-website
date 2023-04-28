@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   font-family: "Inter", sans-serif;
+  background-color: #c19f80;
 }
 
 a {
@@ -14,20 +15,22 @@ a {
   color: aliceblue;
 }
 .container {
+  width: 100%;
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 30px;
 }
+// 375px
 // sm: 540px,
 // md: 720px,
 // lg: 960px,
 // xl: 1140px,
 // xxl: 1320px
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+// .app {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
 a.active {
   color: #c19f80;
   border-bottom: 2px solid #c19f80;

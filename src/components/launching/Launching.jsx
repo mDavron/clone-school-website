@@ -15,14 +15,12 @@ const Launching = () => {
               <span className={styles.hero}> CIC International School </span>{" "}
               celebrated its launch at INHA University in Tashkent with it’s
               founder
-              <i>
-                <span className={styles.hero}> Umidjon Ishmukhamedov</span>
-              </i>
-              , as its host. The founder of the educational institution made
-              Millat Umidi International School’s intentions very clear in order
-              to provide merit students with opportunities that lead their
-              studies to the Top Universities as well as also scholarships to
-              pave the way for distinction students.
+              <span className={styles.hero}> Umidjon Ishmukhamedov</span>, as
+              its host. The founder of the educational institution made Millat
+              Umidi International School’s intentions very clear in order to
+              provide merit students with opportunities that lead their studies
+              to the Top Universities as well as also scholarships to pave the
+              way for distinction students.
             </p>
           </div>
         </div>

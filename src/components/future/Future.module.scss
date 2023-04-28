@@ -15,9 +15,13 @@
       font-style: normal;
       font-weight: 700;
       font-size: 70px;
-      // line-height: 85px;
+      line-height: 85px;
       text-align: center;
       color: #ffffff;
+      @media (max-width: 960px) and (min-width: 720px) {
+        font-size: 50px;
+        line-height: 65px;
+      }
     }
     .submenu {
       font-weight: 500;

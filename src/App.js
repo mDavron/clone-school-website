@@ -6,6 +6,7 @@ import About from "./pages/about/About";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Form from "./pages/form/Form";
 import Notfound from "./pages/notFound/Notfound";
+
 function App() {
   return (
     <div className="app">

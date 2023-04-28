@@ -15,11 +15,11 @@ export const footerData = {
     },
   ],
   items1: [
-    { text: "Branches" },
-    { text: "Opportunities" },
-    { text: "Why CIC School?" },
-    { text: "Student Portfolio" },
-    { text: "Partners" },
+    { text: "Branches", href: "branches" },
+    { text: "Opportunities", href: "opportunities" },
+    { text: "Why CIC School?", href: "school" },
+    { text: "Student Portfolio", href: "portfolio" },
+    { text: "Partners", href: "partners" },
   ],
   items2: [
     { text: "Home", url: "/" },

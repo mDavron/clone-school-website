@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Branches.module.scss";
 import man from "../../assets/images/branches/hero.jpg";
+
 const Branches = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="branches">
       <div className="container">
         <div className={styles.flex}>
           <img className={styles.img} src={man} alt="" />

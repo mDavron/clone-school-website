@@ -27,39 +27,42 @@ const Header = () => {
           <div className={styles.logo}>
             <img src={logo} alt="" />
           </div>
-
-          <nav>
-            <ul>
-              <li>
-                <NavLink to={"/"}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/about"}>About us</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/contacts"}>Contact us</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/form"}>Apply now</NavLink>
-              </li>
-            </ul>
-          </nav>
-          <div className={styles.contact}>
-            <img src={phoneCall} alt="" />
-            <span>+998 71 200 0308</span>
-          </div>
-          <div onClick={() => setOpen(!open)} className={styles.lang}>
-            {lang}
-            <img
-              src={menuIcon}
-              alt=""
-              style={open ? { transform: "rotate(180deg)" } : null}
-            />
-            {open && (
-              <div className={styles.subMenu}>
-                <span onClick={toggLeMenu}>{lang === "uz" ? "en" : "uz"}</span>
-              </div>
-            )}
+          <div className={styles.menu}>
+            <nav>
+              <ul>
+                <li>
+                  <NavLink to={"/"}>Home</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/about"}>About us</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/contacts"}>Contact us</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/form"}>Apply now</NavLink>
+                </li>
+              </ul>
+            </nav>
+            <div className={styles.contact}>
+              <img src={phoneCall} alt="" />
+              <span>+998 71 200 0308</span>
+            </div>
+            <div onClick={() => setOpen(!open)} className={styles.lang}>
+              {lang}
+              <img
+                src={menuIcon}
+                alt=""
+                style={open ? { transform: "rotate(180deg)" } : null}
+              />
+              {open && (
+                <div className={styles.subMenu}>
+                  <span onClick={toggLeMenu}>
+                    {lang === "uz" ? "en" : "uz"}
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,13 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 100px;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // gap: 70px;
+
+  // @media (max-width: 960px) {
+  //   grid-template-columns: 1fr;
+  // }
 }
 .flex {
   display: flex;
