@@ -21,6 +21,18 @@
     width: 550px;
     height: 550px;
     border-radius: 10px;
+    @media (max-width: 1140px) {
+      width: 500px;
+      height: 500px;
+    }
+    @media (max-width: 540px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media (max-width: 375px) {
+      width: 300px;
+      height: 300px;
+    }
   }
   .content {
     h2 {

@@ -6,8 +6,10 @@
 }
 body {
   height: 100vh;
+  width: 100%;
   font-family: "Inter", sans-serif;
-  background-color: #c19f80;
+  // background-color: #c19f80;
+  overflow-x: hidden;
 }
 
 a {

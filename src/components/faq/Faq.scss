@@ -10,12 +10,18 @@
   align-items: center;
   max-width: 1920px;
   margin: 0 auto;
+  @media (max-width: 961px) {
+    padding: 50px 0;
+  }
   h3 {
     font-size: 45px;
     color: #fff;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
+    @media (max-width: 961px) {
+      font-size: 30px;
+    }
   }
   .flex {
     display: flex;
@@ -23,7 +29,7 @@
     @media (max-width: 1320px) {
       gap: 100px;
     }
-    @media (max-width: 960px) and (min-width: 720px) {
+    @media (max-width: 768px) {
       flex-direction: column;
     }
   }
@@ -40,6 +46,9 @@
       align-items: center;
       border-bottom: 2px solid rgba(255, 255, 255, 1);
       text-transform: capitalize;
+      @media (max-width: 961px) {
+        font-size: 20px;
+      }
     }
     .title.active {
       border-bottom: 0;
@@ -47,10 +56,14 @@
 
     .text {
       margin-top: 10px;
-      line-height: 24px;
+      line-height: 26px;
       font-size: 19px;
       color: #fff;
       padding-right: 30px;
+      @media (max-width: 961px) {
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
     .toggle {
       font-size: 27px;
@@ -77,6 +90,9 @@
       font-size: 27px;
       color: #fff;
       text-align: center;
+      @media (max-width: 961px) {
+        font-size: 24px;
+      }
     }
     span.small {
       color: rgba(193, 159, 128, 1);

@@ -8,13 +8,14 @@
     @media (max-width: 1320px) {
       gap: 100px;
     }
-    @media (max-width: 960px) and (min-width: 720px) {
+    @media (max-width: 961px) {
       flex-direction: column;
+      gap: 100px;
     }
   }
   .content {
     text-align: left;
-    @media (max-width: 960px) and (min-width: 720px) {
+    @media (max-width: 960px) and (min-width: 768px) {
       width: 80%;
       margin-left: auto;
       margin-right: auto;
@@ -35,6 +36,12 @@
       font-size: 22px;
       line-height: 30px;
       color: #c0610a;
+      @media (max-width: 961px) and (min-width: 768) {
+        padding: 0 70px;
+      }
+      @media (max-width: 968px) {
+        font-size: 28px;
+      }
       span {
         font-weight: 500;
       }

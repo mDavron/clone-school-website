@@ -3,16 +3,16 @@
   background-color: black;
   color: #fff;
   &_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 100px;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
 
-    @media (max-width: 960px) {
-      flex-direction: column;
+    @media (max-width: 1140px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+    @media (max-width: 865px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
@@ -24,9 +24,12 @@
 }
 // ===== FOOTER LEFT HERE =====
 .footer_left {
-  flex: 1;
+  // background-color: #c19f80;
   .connections {
     padding-left: 20px;
+    @media (max-width: 961px) {
+      padding-left: 0px;
+    }
   }
   h2 {
     margin-bottom: 30px;
@@ -50,11 +53,16 @@
 // ===== FOOTER CENTER HERE =====
 .footer_center {
   margin-top: 15px;
-  flex: 1;
   display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  // background-color: #b76969;
+  justify-content: flex-start;
+  gap: 100px;
+  @media (max-width: 961px) {
+    row-gap: 50px;
+  }
+  @media (max-width: 420px) {
+    gap: 50px;
+    flex-direction: column;
+  }
   .footer_centerLeft,
   .footer_centerRight {
     .list_title {
@@ -73,8 +81,9 @@
 }
 // ===== FOOTER RIGHT HERE =====
 .footer_right {
-  flex: 1;
   margin-top: 15px;
+  @media (max-width: 961px) {
+  }
   .footer_right_title {
     margin-bottom: 20px;
   }
@@ -103,6 +112,8 @@
     padding-right: 1px;
   }
   .footer_form {
+    display: flex;
+    flex-direction: column;
     .form_title {
       font-size: 24px;
       color: #fff;
@@ -110,6 +121,7 @@
     }
     .form_input {
       width: 90%;
+      max-width: 300px;
       background: transparent;
       font-size: 16px;
       color: #fff;
@@ -122,6 +134,8 @@
       font-size: 18px;
       color: #fff;
       width: 90%;
+      max-width: 300px;
+
       background: transparent;
       color: #fff;
       border-radius: 3px;

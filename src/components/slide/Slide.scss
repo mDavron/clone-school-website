@@ -6,6 +6,14 @@
     width: 500px;
     height: 500px;
   }
+  @media (max-width: 540px) {
+    width: 350px;
+    height: 350px;
+  }
+  @media (max-width: 375px) {
+    width: 300px;
+    height: 300px;
+  }
 
   .swiper {
     width: 100%;
