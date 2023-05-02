@@ -10,6 +10,14 @@ $textColor: #000;
   justify-content: center;
   gap: 100px;
   padding: 100px 0;
+  @media (max-width: 1140px) {
+    gap: 30px;
+    padding: 30px 0;
+  }
+  @media (max-width: 1040px) {
+    flex-direction: column;
+    row-gap: 50px;
+  }
 }
 .about_top,
 .about_bottom {
@@ -21,12 +29,20 @@ $textColor: #000;
     font-weight: 700;
     color: #000;
     margin-bottom: 30px;
+    @media (max-width: 1140px) {
+      text-align: center;
+      font-size: 30px;
+    }
   }
   .about_text {
     margin-top: 30px;
     font-size: 18px;
     line-height: 24px;
     color: #c19f80;
+
+    @media (max-width: 1040px) and (min-width: 768px) {
+      padding: 0px 50px;
+    }
   }
 }
 // ======= ABOUT BOTTOM =======
@@ -37,6 +53,13 @@ $textColor: #000;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 540px) {
+      h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 32px;
+      }
+    }
   }
   .about_title_top {
     font-size: 45px;
@@ -45,6 +68,11 @@ $textColor: #000;
     font-weight: 500;
     color: #fff;
     text-align: center;
+    @media (max-width: 1140px) {
+      font-size: 30px;
+      margin-bottom: 10px;
+      line-height: 45px;
+    }
   }
   .about_title_small {
     font-size: 24px;
@@ -62,6 +90,18 @@ $textColor: #000;
   .bgAbout {
     border-radius: 12px;
     width: 550px;
+    @media (max-width: 1140px) {
+      width: 500px;
+      height: 500px;
+    }
+    @media (max-width: 540px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media (max-width: 375px) {
+      width: 300px;
+      height: 300px;
+    }
   }
 }
 // ====== Education and cards styles ======
@@ -81,12 +121,14 @@ $textColor: #000;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   gap: 50px;
-  @media (max-width: 1140px) {
+  @media (max-width: 1320px) {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 80px;
+    gap: 30px;
   }
-  @media (max-width: 960px) {
+  @media (max-width: 992px) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

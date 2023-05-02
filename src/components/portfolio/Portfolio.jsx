@@ -9,9 +9,9 @@ const Portfolio = () => {
   return (
     <div className={styles.portfolio}>
       <div className="container">
-        <section className={styles.desc}>
-          <h1 className={styles.title}>Excellent Student Portfolio</h1>
-          <p className={styles.text}>
+        <section className={styles.portfolio_desc}>
+          <h1 className={styles.desc_title}>Excellent Student Portfolio</h1>
+          <p className={styles.desc_text}>
             Student Portfolio is an integral part of each student's application
             advancing from high school to a university.
             <strong> Cambridge International College </strong> provides all
@@ -20,7 +20,7 @@ const Portfolio = () => {
             worldwide and have the opportunity to study based on scholarships.
           </p>
         </section>
-        <section className={styles.portfolio_bottom}>
+        <section className={styles.portfolio_details}>
           <div className={styles.left}>
             {data.map((item, index) => {
               const { icon, title, text } = item;
@@ -31,8 +31,8 @@ const Portfolio = () => {
                   </div>
 
                   <div>
-                    <div className={styles.content}>
-                      <h1 className={styles.content_title}>{title}</h1>
+                    <div className={styles.item_content}>
+                      <h1 className={styles.item_content_title}>{title}</h1>
                       <p>{text}</p>
                     </div>
                   </div>
@@ -41,7 +41,7 @@ const Portfolio = () => {
             })}
           </div>
           <div className={styles.right}>
-            <img src={bg} alt="" />
+            <img className={styles.img} src={bg} alt="" />
           </div>
         </section>
       </div>

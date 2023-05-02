@@ -15,7 +15,7 @@ const Future = () => {
         <h1>
           Your Future Begins Here <br />
         </h1>
-        <span className={styles.submenu}>
+        <span className={styles.subTitle}>
           Built Your Amazing And Beautiful Career With Us Together
         </span>
         <p>

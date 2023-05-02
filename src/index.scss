@@ -24,9 +24,10 @@ a {
 }
 @media (max-width: 960px) {
   .container {
-    width: 100%;
+    max-width: 100%;
   }
 }
+
 // 375px
 // sm: 540px,
 // md: 720px,

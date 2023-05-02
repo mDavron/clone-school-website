@@ -1,6 +1,9 @@
 .school {
   padding: 100px 0;
   background-color: #fff;
+  @media (max-width: 540px) {
+    padding: 80px 0;
+  }
   .flex {
     display: flex;
     align-items: center;
@@ -12,6 +15,9 @@
       flex-direction: column;
       gap: 100px;
     }
+    @media (max-width: 540px) {
+      gap: 50px;
+    }
   }
   .content {
     text-align: left;
@@ -19,6 +25,9 @@
       width: 80%;
       margin-left: auto;
       margin-right: auto;
+    }
+    @media (max-width: 540px) {
+      width: 100%;
     }
     h2 {
       font-family: "Inter";
@@ -28,6 +37,11 @@
       text-align: center;
       color: #000000;
       margin-bottom: 38px;
+      @media (max-width: 540px) {
+        font-size: 23px;
+        line-height: 28px;
+        margin-bottom: 28px;
+      }
     }
     p {
       font-family: "Inter";
@@ -41,6 +55,10 @@
       }
       @media (max-width: 968px) {
         font-size: 28px;
+      }
+      @media (max-width: 540px) {
+        font-size: 16px;
+        line-height: 20px;
       }
       span {
         font-weight: 500;

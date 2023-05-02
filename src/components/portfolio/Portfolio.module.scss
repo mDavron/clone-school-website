@@ -18,27 +18,36 @@ $normal: 400;
   padding-bottom: 80px;
   background-color: #fff;
   font-family: "Inter", sans-serif;
-  .desc {
+  .portfolio_desc {
     text-align: center;
     max-width: 680px;
     margin: 0 auto;
     margin-bottom: 50px;
 
-    h1 {
+    .desc_title {
       font-size: 50px;
       line-height: 60px;
       color: $titleColor;
       margin-bottom: 30px;
+      @media (max-width: 540px) {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 25px;
+      }
     }
-    p {
+    .desc_text {
       line-height: 25px;
       font-size: $textSize;
       color: $textColor;
+      @media (max-width: 540px) {
+        font-size: 16px;
+        line-height: 30px;
+      }
     }
   }
 
   // PORTFOLIO BOTTOM
-  .portfolio_bottom {
+  .portfolio_details {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,15 +61,18 @@ $normal: 400;
       }
 
       .item {
-        display: flex;
-        gap: 50px;
-        align-items: center;
-        justify-content: center;
         margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr 15fr;
+        gap: 20px;
       }
       .bg > img {
         width: 50px;
         height: 50px;
+        @media (max-width: 540px) {
+          width: 30px;
+          height: 30px;
+        }
       }
       .bg {
         width: 100px;
@@ -69,10 +81,12 @@ $normal: 400;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        @media (max-width: 540px) {
+          width: 70px;
+          height: 70px;
+        }
       }
-      .content_title {
-        margin-bottom: 10px;
-      }
+
       .item:nth-child(1) {
         .bg {
           background: $bgCup;
@@ -102,19 +116,30 @@ $normal: 400;
       }
     }
 
-    .content {
+    .item_content {
       // background-color: aquamarine;
       max-width: 420px;
-      h1 {
+      @media (max-width: 540px) {
+        width: 100%;
+      }
+      .item_content_title {
+        margin-bottom: 10px;
         font-size: $supHeadingSize;
         font-weight: $bold;
         color: $titleColor;
+        @media (max-width: 540px) {
+          font-size: 21px;
+        }
       }
       p {
         font-size: $textSize;
         font-weight: $normal;
         color: $textColor;
         line-height: 20px;
+        @media (max-width: 540px) {
+          font-size: 12px;
+          line-height: 21px;
+        }
       }
     }
 
@@ -126,10 +151,14 @@ $normal: 400;
         flex: 100%;
         justify-content: flex-start;
       }
-      img {
+      .img {
         width: 480px;
         height: 550px;
         object-fit: cover;
+        @media (max-width: 540px) {
+          width: 375px;
+          height: 450px;
+        }
       }
     }
   }
