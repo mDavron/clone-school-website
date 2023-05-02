@@ -13,6 +13,8 @@
     }
     @media (max-width: 865px) {
       grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      // align-items: center;
     }
   }
 }
@@ -59,10 +61,10 @@
   @media (max-width: 961px) {
     row-gap: 50px;
   }
-  @media (max-width: 420px) {
-    gap: 50px;
-    flex-direction: column;
-  }
+  // @media (max-width: 420px) {
+  //   gap: 50px;
+  //   flex-direction: column;
+  // }
   .footer_centerLeft,
   .footer_centerRight {
     .list_title {
@@ -75,6 +77,9 @@
         color: #fff;
         font-size: 18px;
         line-height: 21px;
+        @media (max-width: 540px) {
+          font-size: 16px;
+        }
       }
     }
   }
