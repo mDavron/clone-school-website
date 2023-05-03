@@ -10,8 +10,8 @@ const Form = () => {
       <h1>Apply Now</h1>
       <form className={styles.form}>
         <h3>Admission Form</h3>
-        <input type="text" name="fullName" placeholder="fullName" />
-        <input type="text" name="lastName" placeholder="LastName" />
+        <input type="text" name="fullName" placeholder="Full Name" />
+        <input type="text" name="lastName" placeholder="Last Name" />
         <input type="phone" name="phone" placeholder="mobile" />
         <input type="email" name="email" placeholder="Your Email" />
         <input
@@ -21,8 +21,8 @@ const Form = () => {
         />
 
         <select name="Applying" id="cars">
-          <option value="Applying School Garde" disabled selected>
-            Applying School Garde
+          <option value="Applying School Grade" disabled selected>
+            Applying School Grade
           </option>
           <option value="Navoiy Branch">Navoiy Branch</option>
           <option value="Ibn Sino Branch">Ibn Sino Branch</option>
@@ -36,7 +36,7 @@ const Form = () => {
           <option value="starter">starter</option>
           <option value="beginner">beginner</option>
           <option value="intermediate">intermediate</option>
-          <option value="intermediate">master</option>
+          <option value="advanced">advanced</option>
         </select>
 
         <select name="branch" id="branch">
@@ -52,7 +52,7 @@ const Form = () => {
         <input
           type="text"
           name="Parents Full Name"
-          placeholder="Parents Full Name"
+          placeholder="Parents' Full Name"
         />
         <input type="tel" name="Parents Mobile" placeholder="Parents Mobile" />
         <button>Submit</button>

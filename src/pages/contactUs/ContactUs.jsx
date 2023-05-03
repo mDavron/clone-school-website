@@ -21,7 +21,7 @@ const ContactUs = () => {
   return (
     <div className={styles.contacts}>
       <img src={hero} alt="" />
-      <div className={styles.contact_us}>
+      {/* <div className={styles.contact_us}>
         <div className="container">
           <div className={styles.items}>
             {details.map((value, i) => {
@@ -43,7 +43,7 @@ const ContactUs = () => {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <section className={styles.mapWrapper}>
         <div className={styles.mapContainer}>
           <div className={styles.mapInner}>
