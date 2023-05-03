@@ -47,8 +47,10 @@ const About = () => {
         <div className="container">
           <div className={styles.about_inner}>
             <div className={styles.about_left}>
-              <h2 className={styles.about_title_top}>Admission is Open Now</h2>
-              <p className={styles.about_title_small}>
+              <h2 className={styles.about_bottom_title}>
+                Admission is Open Now
+              </h2>
+              <p className={styles.about_bottom_subTitle}>
                 Admission is open for <span>grades 1-11 now</span>
               </p>
               <Button />

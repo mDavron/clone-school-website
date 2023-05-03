@@ -8,6 +8,9 @@
     height: 100%;
     object-fit: cover;
     background-position: center;
+    @media (max-width: 540px) {
+      height: 50vh;
+    }
   }
 }
 .contacts_bg {
@@ -24,24 +27,28 @@
 .items {
   min-height: 350px;
   padding: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  // flex-wrap: wrap;
+
   @media (max-width: 1320px) {
     gap: 40px;
   }
+
+  @media (max-width: 1140px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 541px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .item {
-    flex: 33.333%;
+    // flex: 33.333%;
     color: #fff;
     display: flex;
     align-items: center;
     gap: 20px;
     // background-color: aquamarine;
     @media (max-width: 1140px) {
-      flex: 50%;
-      padding-right: 20px;
     }
 
     .bgIcon {
@@ -86,7 +93,7 @@
     }
   }
 }
-// MAP STYLES
+// ===== GOOGLE MAPS STYLES HERE ======
 .mapWrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -104,13 +111,15 @@
   padding: 0px 20px;
 }
 .mapInner {
-  display: flex;
-  // flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   gap: 50px;
   @media (max-width: 1140px) {
-    // gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .cardWrap {
@@ -120,6 +129,9 @@
   }
   @media (max-width: 500px) {
     width: 350px;
+  }
+  @media (max-width: 376px) {
+    width: 325px;
   }
   @media (max-width: 325px) {
     width: 280px;
