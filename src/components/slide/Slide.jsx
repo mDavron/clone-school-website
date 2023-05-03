@@ -20,11 +20,11 @@ const Slide = ({ data }) => {
     <div className="sliderWrapper">
       <>
         <Swiper
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          //   pauseOnMouseEnter: true,
+          // }}
           spaceBetween={30}
           pagination={{
             clickable: true,
