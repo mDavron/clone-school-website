@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/images/headerIcons/logo.svg";
 import phoneCall from "../../assets/images/headerIcons/call.svg";
-import menuIcon from "../../assets/images/headerIcons/menu-icon.svg";
+import iconDown from "../../assets/images/headerIcons/icon-down.svg";
+// Hamburger and close menu
+import hamburgerMenuIcon from "../../assets/images/headerIcons/menu.svg";
+import closeMenuIcon from "../../assets/images/headerIcons/close-menu.svg";
+
 import styles from "./Header.module.scss";
 
 const Header = () => {
   const location = useLocation();
   // console.log(location.pathname);
+  const [menuActive, setMenuActive] = useState(false);
   const [open, setOpen] = useState(false);
   const [lang, setLang] = useState("en");
 
@@ -51,7 +56,7 @@ const Header = () => {
             <div onClick={() => setOpen(!open)} className={styles.lang}>
               {lang}
               <img
-                src={menuIcon}
+                src={iconDown}
                 alt=""
                 style={open ? { transform: "rotate(180deg)" } : null}
               />
@@ -63,6 +68,16 @@ const Header = () => {
                 </div>
               )}
             </div>
+          </div>
+          <div
+            className={styles.mobileMenu}
+            onClick={() => setMenuActive(!menuActive)}
+          >
+            {menuActive ? (
+              <img src={closeMenuIcon} />
+            ) : (
+              <img src={hamburgerMenuIcon} />
+            )}
           </div>
         </div>
       </div>

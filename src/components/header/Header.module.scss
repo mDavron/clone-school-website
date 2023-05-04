@@ -108,3 +108,15 @@ nav {
     width: 100%;
   }
 }
+.mobileMenu {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+  img {
+    width: 28px;
+    height: 25px;
+    padding: 8px;
+    box-sizing: unset;
+  }
+}
