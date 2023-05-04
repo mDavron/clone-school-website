@@ -21,7 +21,7 @@ const Home = () => {
       <Launching />
       <Facilities />
       <School />
-      // <Faq />
+      <Faq />
       <Portfolio />
     </div>
   );
