@@ -19,10 +19,10 @@ const Home = () => {
       <Branches />
       <Future />
       <Launching />
-      {/* <Facilities /> */}
-      {/* <School /> */}
-      {/* <Faq /> */}
-      {/* <Portfolio /> */}
+      <Facilities />
+      <School />
+      // <Faq />
+      <Portfolio />
     </div>
   );
 };

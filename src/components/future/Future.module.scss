@@ -24,6 +24,10 @@
         font-size: 45px;
         line-height: 54px;
       }
+      @media (max-width: 540px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
     }
     .subTitle {
       font-weight: 500;
@@ -51,6 +55,9 @@
       @media (max-width: 540px) {
         font-size: 20px;
         line-height: 24px;
+      }
+      @media (max-width: 330px) {
+        margin-top: 40px;
       }
       span {
         color: rgba(193, 159, 128, 1);
