@@ -13,38 +13,56 @@ const Header = () => {
   const location = useLocation();
   // console.log(location.pathname);
   const [menuActive, setMenuActive] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [lang, setLang] = useState("en");
+  const completedClass = menuActive ? styles.active : " ";
+  // CHANGE NAVBAR BG ON SCROLL
+  const [navBg, setNavBg] = useState(false);
 
   const toggLeMenu = () => {
     setLang(lang === "uz" ? "en" : "uz");
-    setOpen(!open);
+    setLangMenuOpen(!langMenuOpen);
   };
+  const isHome = location.pathname === "/" ? true : false;
+
+  const changeNavBg = () => {
+    window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", changeNavBg);
+    return () => {
+      window.removeEventListener("scroll", changeNavBg);
+    };
+  }, []);
 
   return (
     <header
-      className={`${styles.header} ${
-        location.pathname !== "/" ? styles.bgBlack : " "
-      }`}
+      className={styles.header}
+      style={
+        (isHome && navBg) || location.pathname !== "/"
+          ? { background: "rgb(37, 32, 32)" }
+          : { backgroundColor: "transparent" }
+      }
     >
       <div className="container">
         <div className={styles.header_inner}>
           <div className={styles.logo}>
             <img src={logo} alt="" />
           </div>
-          <div className={styles.menu}>
+          <div className={`${styles.nav_menu} ${completedClass}`}>
             <nav>
               <ul>
-                <li>
+                <li onClick={() => setMenuActive(false)}>
                   <NavLink to={"/"}>Home</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setMenuActive(false)}>
                   <NavLink to={"/about"}>About us</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setMenuActive(false)}>
                   <NavLink to={"/contacts"}>Contact us</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setMenuActive(false)}>
                   <NavLink to={"/form"}>Apply now</NavLink>
                 </li>
               </ul>
@@ -53,14 +71,17 @@ const Header = () => {
               <img src={phoneCall} alt="" />
               <span>+998 71 200 0308</span>
             </div>
-            <div onClick={() => setOpen(!open)} className={styles.lang}>
+            <div
+              onClick={() => setLangMenuOpen(!langMenuOpen)}
+              className={styles.lang}
+            >
               {lang}
               <img
                 src={iconDown}
                 alt=""
-                style={open ? { transform: "rotate(180deg)" } : null}
+                style={langMenuOpen ? { transform: "rotate(180deg)" } : null}
               />
-              {open && (
+              {langMenuOpen && (
                 <div className={styles.subMenu}>
                   <span onClick={toggLeMenu}>
                     {lang === "uz" ? "en" : "uz"}
