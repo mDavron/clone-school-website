@@ -19,7 +19,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    @media (max-width: 960px) {
+    @media (max-width: 1140px) {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -70,7 +70,7 @@ nav {
     font-size: 19px;
     line-height: 24px;
     padding-bottom: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:hover,
     &:active {
       color: #c19f80;
@@ -80,6 +80,8 @@ nav {
       font-size: 16px;
     }
     @media (max-width: 960px) {
+      font-size: 20px;
+      line-height: 30px;
       &:hover,
       &:active {
         color: #fff;
@@ -133,7 +135,7 @@ nav {
   text-transform: capitalize;
   width: 50px;
   margin-left: 10px;
-  @media (max-width: 960px) {
+  @media (max-width: 1140px) {
     position: absolute;
     left: 20vw;
     top: 0px;
@@ -164,7 +166,7 @@ nav {
 }
 .mobileMenu {
   display: none;
-  @media (max-width: 960px) {
+  @media (max-width: 1140px) {
     display: block;
     margin-right: 5px;
     z-index: 3;
