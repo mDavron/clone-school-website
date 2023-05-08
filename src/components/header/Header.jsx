@@ -65,30 +65,30 @@ const Header = () => {
                 <li onClick={() => setMenuActive(false)}>
                   <NavLink to={"/form"}>Apply now</NavLink>
                 </li>
-              </ul>
-            </nav>
-            <div className={styles.contact}>
-              <img src={phoneCall} alt="" />
-              <span>+998 71 200 0308</span>
-            </div>
-            <div
-              onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className={styles.lang}
-            >
-              {lang}
-              <img
-                src={iconDown}
-                alt=""
-                style={langMenuOpen ? { transform: "rotate(180deg)" } : null}
-              />
-              {langMenuOpen && (
-                <div className={styles.subMenu}>
-                  <span onClick={toggLeMenu}>
-                    {lang === "uz" ? "en" : "uz"}
-                  </span>
+                <div className={styles.contact}>
+                  <img src={phoneCall} alt="" />
+                  <span>+998 71 200 0308</span>
                 </div>
-              )}
-            </div>
+              </ul>
+              <div
+                onClick={() => setLangMenuOpen(!langMenuOpen)}
+                className={styles.lang}
+              >
+                {lang}
+                <img
+                  src={iconDown}
+                  alt=""
+                  style={langMenuOpen ? { transform: "rotate(180deg)" } : null}
+                />
+                {langMenuOpen && (
+                  <div className={styles.subMenu}>
+                    <span onClick={toggLeMenu}>
+                      {lang === "uz" ? "en" : "uz"}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </nav>
           </div>
           <div
             className={styles.mobileMenu}

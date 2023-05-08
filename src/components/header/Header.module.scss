@@ -45,6 +45,12 @@
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  @media (max-width: 1140px) {
+    margin-top: 53px;
+    position: relative;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -60,8 +66,9 @@ nav {
       justify-content: center;
       align-items: flex-start;
       padding-left: 20px;
-      margin-top: 150px;
-      margin-bottom: 30px;
+      // margin-top: 150px;
+      margin-bottom: 0px;
+      padding-left: 50px;
     }
   }
   a {
@@ -108,6 +115,10 @@ nav {
       height: 27px;
       width: 27px;
     }
+    @media (max-width: 1140px) {
+      // background: #fff;
+      display: none;
+    }
   }
   span {
     font-size: 19px;
@@ -137,12 +148,11 @@ nav {
   margin-left: 10px;
   @media (max-width: 1140px) {
     position: absolute;
-    left: 20vw;
     top: 0px;
-    margin-top: 150px;
+    left: -10vw;
   }
-  @media (max-width: 540px) {
-    left: 6vw;
+  @media (max-width: 768px) {
+    left: -12vw;
   }
 
   img {
